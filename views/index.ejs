@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Mini Message Board</title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <% for (let i = 0; i < messages.length; i++) { %>
+    <div class="message-card">
+      <div class="message-username"><%= messages[i].user %></div>
+      <div class="message-date"><%= messages[i].added %></div>
+      <div class="message-text"><%= messages[i].text %></div>
+    </div>
+    <% } %>
   </body>
 </html>

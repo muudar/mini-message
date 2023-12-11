@@ -1,8 +1,75 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
+.message-card {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: bold;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: purple;
+}
+
+.message-username {
+  font-size: 1.25rem;
+}
+
+.message-date {
+  font-size: 0.75rem;
+}
+
+.message-text {
+  margin-top: 0.5rem;
+  border: 2px solid white;
+  padding: 0.5rem;
+}
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
 }

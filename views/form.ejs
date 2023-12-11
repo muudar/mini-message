@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="POST" action="/new">
+      <h2>Add Message</h2>
+      <label for="author">Author:</label>
+      <input type="text" id="author" name="author" required />
+
+      <label for="text">Text:</label>
+      <textarea id="text" name="messageText" rows="4" required></textarea>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
